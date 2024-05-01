@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+section {
+  text-align: center;
+}
+
+#timer {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#words {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: rgb(83, 74, 74);
+  font-size: 2rem;
+  max-height: 2rem;
+  border: 1px solid rgb(83, 74, 74, 0.5);
+  overflow: scroll;
+  display: flex;
+}
+
+#keys {
+  display: flex;
+  justify-content: center;
+  margin-block: 2rem;
+}
+
+#keys-wrapper > div {
+  display: grid;
+  grid-template-columns: repeat(10, 60px);
+  grid-auto-rows: 40px;
+  gap: 0.2rem;
+  margin-block: 0.5rem;
+  button {
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: transparent;
+  }
+}
+div:nth-child(3) {
+  margin-left: 40px;
+}
+div:nth-child(4) {
+  margin-left: 100px;
+}
+
+#reset:is(div > button) {
+  color: black;
+  background-color: cyan;
+  font-size: 1rem;
+}
+
+#keys + div {
+  display: flex;
+  justify-content: center;
+  margin-block: 1rem;
+}
